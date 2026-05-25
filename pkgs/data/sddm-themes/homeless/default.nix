@@ -12,6 +12,8 @@ stdenv.mkDerivation {
 
   dontBuild = true;
 
+  dontWrapQtApps = true;
+
   installPhase = ''
     mkdir -p $out/share/sddm/themes/homeless
 
