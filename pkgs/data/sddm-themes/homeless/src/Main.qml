@@ -22,7 +22,8 @@ Rectangle {
     property real ui: 0
 
     // Theme colors
-    readonly property color amberHot:   "#73A567"
+    readonly property color amberHot:   "#fff"
+    // readonly property color amberHot:   "#73A567"
     readonly property color amberSoft:  "#D4D177"
     readonly property color tealSign:   "#5BA19B"
     readonly property color textWhite:  "#A3C2A4"
