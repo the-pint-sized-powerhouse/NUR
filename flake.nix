@@ -8,13 +8,11 @@
   outputs =
     { self, nixpkgs }:
     let
-      # Define the systems you want to support
       systems = [
         "x86_64-linux"
         "aarch64-linux"
       ];
 
-      # A helper function to generate outputs for all systems
       forAllSystems = nixpkgs.lib.genAttrs systems;
     in
     {
@@ -25,7 +23,7 @@
         in
         {
           wlogout-icons = pkgs.callPackage ./pkgs/data/wlogout-icons/icons { };
-          #sddm-theme = pkgs.callPackage ./pkgs/data/sddm-themes/homeless { };
+          sddm-theme = pkgs.callPackage ./pkgs/data/sddm-themes/homeless { };
         }
       );
     };
