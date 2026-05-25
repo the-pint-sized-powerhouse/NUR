@@ -6,7 +6,7 @@
   };
 
   outputs =
-    { nixpkgs }:
+    { self, nixpkgs }:
     let
       # Define the systems you want to support
       systems = [
